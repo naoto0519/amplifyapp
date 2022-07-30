@@ -1,0 +1,13 @@
+type Job @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String
+  price: Int
+  summary: String
+  from_date: AWSDate
+  to_date: AWSDate
+  required_skill: String
+  required_level: Int
+  status: String
+  image_url: AWSURL
+}
+ 
